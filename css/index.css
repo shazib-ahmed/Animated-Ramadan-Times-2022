@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #1a2035;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+
+/* List styles */
+.list {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.list a {
+  display: block;
+  color: #fff;
+}
+
+.list a:hover {
+  text-indent: 20px;
+}
+
+.list dt,
+.list dd {
+  text-indent: 10px;
+  line-height: 55px;
+  background: #e0fbac;
+  margin: 0;
+  height: 55px;
+  width: 270px;
+  color: #fff;
+}
+
+.list dt {
+  /* Since we're hiding elements behind here, we need it in 3d */
+  -webkit-transform: translateZ(0.3px);
+  -moz-transform: translateZ(0.3px);
+  -ms-transform: translateZ(0.3px);
+  -o-transform: translateZ(0.3px);
+  transform: translateZ(0.3px);
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+}
+
+.list dd {
+  border-top: 1px dashed rgba(255, 255, 255, 0.3);
+  line-height: 35px;
+  font-size: 11px;
+  height: 35px;
+  margin: 0;
+}
+
+
+
+/* Individual styles */
+.sashimi dt,
+.sashimi dd,
+.sashimi a {
+  background: #1f283e;
+}
+.nigiri dt,
+.nigiri dd,
+.nigiri a {
+  background: #1f283e;
+}
+.maki dt,
+.maki dd,
+.maki a {
+  background: #1f283e;
+  width: 100%;
+}
+
+.maki {
+  -webkit-transform: perspective(600px) translateZ(1px) !important;
+  -moz-transform: perspective(600px) translateZ(1px) !important;
+  -ms-transform: perspective(600px) translateZ(1px) !important;
+  -o-transform: perspective(600px) translateZ(1px) !important;
+  transform: perspective(600px) translateZ(1px) !important;
+
+  width: 95%;
+}
+
+
+
+section {
+  margin: 20px 30px;
+}
+
+section dl dt span {
+  margin-left: 15px;
+}
+
+section dl dt span b {
+  margin-left: 10px;
+}
+
+section dl dt {
+  align-items: center;
+  text-align: center;
+  background: #1f283e;
+  width: 100%;
+  height: fit-content;
+  padding: 15px 0;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #ffffff45 !important;
+}
+
+section dl dd {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  background: #1f283e;
+  width: 100%;
+  height: fit-content;
+  padding: 15px 0;
+  border-bottom: 1px dashed #ffffff0f !important;
+}
+
+section dl dd:last-child {
+  border: none;
+}
+
+section dl dd span {
+  border-right: 1px dashed #ffffff0f !important;
+  width: 100%;
+}
+
+section dl dd span:last-child {
+  border: none;
+}
+
+#table-buttons {
+  display: none;
+  justify-content: space-between;
+  background: #1f283e;
+  padding: 25px 10px;
+  z-index: 10;
+  position: relative;
+}
+
+.left-buttons span {
+  width: fit-content;
+  height: 15px;
+  border-radius: 6px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  background: #1a2035;
+  padding: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.left-buttons span:last-child {
+  margin-right: 0;
+}
+
+.right-button span {
+  width: fit-content;
+  height: 15px;
+  border-radius: 6px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  background: #1a2035;
+  padding: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.right-button span:last-child {
+  margin-right: 0;
+}
+
+#full-buttons {
+  background: #1f283e;
+  padding: 25px 10px;
+  z-index: 10;
+  position: relative;
+}
+
+.main-button {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 8px;
+  background: #1a2035;
+  border-radius: 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.countdown-time {
+    position: relative;
+}
+
+.countdown-time::before {
+    position: absolute;
+    content: ":";
+    right: -10px;
+}
+
+#time_zones{
+    background: #1f283e;
+    padding: 25px 10px;
+    z-index: 10;
+    position: relative;
+}
+
+#time_zones span {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    text-transform: uppercase;
+}
